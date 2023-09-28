@@ -4,6 +4,8 @@
 
 ## https://www.odoo.com/forum/help-1/no-module-named-psycopg2-18086
 
+## https://stackoverflow.com/questions/11618898/pg-config-executable-not-found
+
 FROM ubuntu
 
 COPY ./ ./
@@ -27,4 +29,4 @@ RUN set -xe \
      
 ## On Container start, run the Python API file
 
-CMD ["python3", "manage.py"]
+CMD ["python3", "manage.py", "runserver"]
