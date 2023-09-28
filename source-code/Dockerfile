@@ -2,6 +2,8 @@
 
 ## https://stackoverflow.com/questions/26072426/import-error-django-corsheaders
 
+## https://www.odoo.com/forum/help-1/no-module-named-psycopg2-18086
+
 FROM ubuntu
 
 COPY ./ ./
@@ -20,7 +22,8 @@ RUN set -xe \
 RUN set -xe \
      && pip install django \
      && pip install djangorestframework \
-     && pip install django-cors-headers
+     && pip install django-cors-headers \
+     && pip install psycopg2
      
 ## On Container start, run the Python API file
 
