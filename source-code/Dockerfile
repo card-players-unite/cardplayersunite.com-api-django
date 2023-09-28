@@ -15,8 +15,9 @@ RUN set -xe \
 ## install django api things
 
 RUN set -xe \
-     && pip install django
-
+     && pip install django \
+     && pip install rest_framework
+     
 ##     && pip install django_cors
 ##     && pip install django \
 ##     && pip install django_cors
