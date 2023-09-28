@@ -8,7 +8,7 @@ pipeline {
 
             steps {
 
-                sh 'chmod +x ./build-automation/*.sh'                        
+                sh 'chmod +x ./build-automation/*.sh;ls'                        
 
             }
 
