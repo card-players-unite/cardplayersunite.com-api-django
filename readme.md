@@ -1,5 +1,22 @@
 # Project Summary
 
+## resources
+
+## parse_yaml.sh
+
+https://gist.github.com/pkuczynski/8665367
+
+https://gist.github.com/pkuczynski/8665367
+
+## youtube video situation
+
+https://www.youtube.com/watch?v=Pwwz4_AvHDU
+
+https://art-of-engineer.blogspot.com/2021/06/python-django-postgresql-rest-api.html
+
+https://github.com/ArtOfEngineer/PythonDjango-PostgreSQL-VueJS/tree/main
+
+
 **Customer:** [insert]
 
 **Project name:** [insert]
