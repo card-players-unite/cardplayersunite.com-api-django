@@ -14,10 +14,10 @@ RUN set -xe \
 
 ## install flask api things
 
-RUN set -xe \
-    && pip install flask \
-    && pip install flask_cors
+## RUN set -xe \
+##     && pip install flask \
+##     && pip install flask_cors
 
 ## On Container start, run the Python API file
 
-CMD ["python3", "card-players-united-api.py"]
+CMD ["python3", "manage.py"]
