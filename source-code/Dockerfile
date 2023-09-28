@@ -16,11 +16,9 @@ RUN set -xe \
 
 RUN set -xe \
      && pip install django \
-     && pip install djangorestframework
+     && pip install djangorestframework \
+     && pip install corsheaders
      
-##     && pip install django_cors
-##     && pip install django \
-##     && pip install django_cors
 ## On Container start, run the Python API file
 
 CMD ["python3", "manage.py"]
