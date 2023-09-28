@@ -23,7 +23,7 @@ RUN set -xe \
      && pip install django \
      && pip install djangorestframework \
      && pip install django-cors-headers \
-     && pip install psycopg2
+     && pip install psycopg2-binary
      
 ## On Container start, run the Python API file
 
