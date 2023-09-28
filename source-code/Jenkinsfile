@@ -1,0 +1,49 @@
+pipeline {
+ 
+    agent { node { label 'rhea' } }
+
+    stages {
+
+        stage('chmod scripts') {
+
+            steps {
+
+                sh 'chmod +x ./build-automation/*.sh'                        
+
+            }
+
+        }
+        
+        stage('build docker image') {
+
+            steps {
+
+                sh 'cd build-automation; bash ./build-pass-1-build-docker-image-from-dockerfile.sh'
+
+            }
+
+        }
+
+        stage('push to dockerhub') {
+
+            steps {
+
+                sh 'cd build-automation; bash ./build-pass-2-push-docker-image-to-dockerhub.sh'
+
+            }
+
+        }   
+        
+        stage('deploy container') {
+
+            steps {
+
+                sh 'cd build-automation; bash ./execute-pass-1-run-local-environment.sh'
+
+            }
+
+        }             
+        
+    }
+
+}

@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+
+  card-players-united-rest-api-django:
+
+    container_name: card-players-united-rest-api-django
+
+    image: softwareshinobi/card-players-united-rest-api-django
+
+    restart: unless-stopped
+
+    ports:
+
+      - "23088:8080"
+                       
+    networks:
+
+        - network-card-players-united-rest-api-django
+            
+networks:
+
+    network-card-players-united-rest-api-django:
+    
