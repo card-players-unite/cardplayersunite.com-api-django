@@ -22,8 +22,12 @@ RUN set -xe \
         
 ## On Container start, run the Python API file
 
+RUN ls -lha
+
 CMD ["python3", "manage.py", "makemigrations"]
 
 CMD ["python3", "manage.py", "migrate"]
+
+RUN ls -lha
 
 CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
