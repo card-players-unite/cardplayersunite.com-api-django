@@ -11,7 +11,15 @@ FROM python:3
 COPY ./ ./
 
 RUN ls -lha
-     
+  
+
+RUN set -xe \
+     && pip install django \
+     && pip install djangorestframework \
+     && pip install django-cors-headers \
+     && pip install psycopg2-binary \
+     && pip install django-rest-auth-forked
+        
 ## On Container start, run the Python API file
 
 CMD ["python3", "manage.py", "runserver"]
