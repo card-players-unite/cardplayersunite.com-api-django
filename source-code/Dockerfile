@@ -14,7 +14,7 @@ RUN ls -lha
   
 
 RUN set -xe \
-     && pip install django \
+     && pip install django==3.2.10 \
      && pip install djangorestframework \
      && pip install django-cors-headers \
      && pip install psycopg2-binary \
