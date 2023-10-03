@@ -22,6 +22,8 @@ docker image ls
 
 docker system prune -a -f
 
+cd ../build-automation
+
 ./build-pass-1-build-docker-image-from-dockerfile.sh ;
 
 ./execute-pass-1-run-local-environment.sh 
