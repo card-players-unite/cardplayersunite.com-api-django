@@ -2,11 +2,11 @@ version: '3'
 
 services:
 
-  card-players-united-rest-api-django:
+  card-players-united-rest-api:
 
-    container_name: card-players-united-rest-api-django
+    container_name: card-players-united-rest-api
 
-    image: softwareshinobi/card-players-united-rest-api-django
+    image: softwareshinobi/card-players-united-rest-api
 
     restart: unless-stopped
 
@@ -16,9 +16,9 @@ services:
                        
     networks:
 
-        - network-card-players-united-rest-api-django
+        - network-card-players-united-rest-api
             
 networks:
 
-    network-card-players-united-rest-api-django:
+    network-card-players-united-rest-api:
     

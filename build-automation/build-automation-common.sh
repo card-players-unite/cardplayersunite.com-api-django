@@ -1,6 +1,6 @@
 
 repositoryUser="softwareshinobi"
 
-repositoryName="card-players-united-rest-api-django"
+repositoryName="card-players-united-rest-api"
 
 repositoryTag="latest"
