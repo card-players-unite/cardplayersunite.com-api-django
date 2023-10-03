@@ -22,4 +22,4 @@ RUN set -xe \
         
 ## On Container start, run the Python API file
 
-CMD ["python3", "manage.py", "runserver" "0.0.0.0"]
+CMD ["python3", "manage.py", "runserver", "0.0.0.0"]
