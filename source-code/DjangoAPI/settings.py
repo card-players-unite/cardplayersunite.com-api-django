@@ -88,10 +88,10 @@ WSGI_APPLICATION = 'DjangoAPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '<db name>',
-        'USER':'<user>',
-        'PASSWORD':'<password>',
-        'HOST':'<server>',
+        'NAME': 'cardplayersunite',
+        'USER':'cardplayersunite',
+        'PASSWORD':'cardplayersunite',
+        'HOST':'10.108.0.4',
         'PORT':'5432'
     }
 }
