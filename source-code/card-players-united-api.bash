@@ -8,15 +8,15 @@ clear
 
 #set -x
 
-##python3 card-players-united-api.py
+##python3 card-players-unite-api.py
 
 git pull;
 
-docker stop card-players-united-rest-api
+docker stop card-players-unite-api
 
-docker rm card-players-united-rest-api
+docker rm card-players-unite-api
 
-docker image rm softwareshinobi/card-players-united-rest-api:latest
+docker image rm softwareshinobi/card-players-unite-api:latest
 
 docker image ls
 
