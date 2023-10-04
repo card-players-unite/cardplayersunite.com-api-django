@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'cardplayersunite',
         'USER':'cardplayersunite',
         'PASSWORD':'cardplayersunite',
-        'HOST':'10.108.0.4',
+        'HOST':'10.108.0.3',
         'PORT':'5432'
     }
 }
