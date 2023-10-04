@@ -11,23 +11,7 @@ FROM python:3
 COPY ./ ./
 
 RUN ls -lha
-  
 
-RUN set -xe \
-     && pip install 'Django<4.0' \
-     && pip install djangorestframework \
-     && pip install django-cors-headers \
-     && pip install psycopg2-binary \
-     && pip install django-rest-auth-forked
-        
-## On Container start, run the Python API file
-
-RUN ls -lha
-
-CMD ["python3", "manage.py", "makemigrations"]
-
-CMD ["python3", "manage.py", "migrate"]
-
-RUN ls -lha
+RUN chmod +x /server-provision/ubuntu-server-provision.sh && bash /server-provision/ubuntu-server-provision.sh
 
 CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
